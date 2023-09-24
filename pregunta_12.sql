@@ -42,3 +42,9 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+
+SELECT K0, MAX(c12), MIN(c12)
+FROM tbl1
+GROUP BY K0
+
+-- El enunciado está mal. No dice que también se debe calcular el mínimo

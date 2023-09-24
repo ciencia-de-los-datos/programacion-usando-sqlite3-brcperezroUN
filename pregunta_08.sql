@@ -41,3 +41,9 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+
+SELECT strftime('%Y', c23), avg(c21) 
+FROM tbl2
+GROUP BY strftime('%Y', c23) 
+
+-- La respuesta del encunciado está mal. No se debe renombrar la columna como YEAR
