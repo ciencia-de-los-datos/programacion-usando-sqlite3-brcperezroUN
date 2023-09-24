@@ -38,3 +38,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+
+select COUNT(*)
+FROM tbl1
+WHERE strftime('%Y', c14) = '2018'
+GROUP BY strftime('%Y', c14)
+
+-- La respuesta del enunciado está mal. No se deben cambiar los nombres de las columnas
